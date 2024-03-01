@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+
+  &__box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__text {
+    font-size: 3.5rem;
+    color: $color-white;
+    text-transform: lowercase;
+    letter-spacing: 0.2rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+  }
+
+  &__dot {
+    color: $color-blue;
+  }
+}
