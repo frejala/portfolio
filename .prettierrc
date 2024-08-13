@@ -1,5 +1,8 @@
 {
-  "plugins": ["prettier-plugin-tailwindcss", "eslint-plugin-readable-tailwind"],
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "eslint-plugin-readable-tailwind"
+  ],
   "semi": true,
   "singleQuote": true,
   "trailingComma": "es5",
