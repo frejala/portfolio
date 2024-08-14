@@ -55,3 +55,22 @@ export const TECHNOLOGIES = [
     color: 'text-sky-700',
   },
 ];
+
+export const EXPERIENCES = [
+  {
+    year: '2022 - Present',
+    role: 'Full Stack Developer',
+    company: 'Centro de Desarrollo Sostenible S.A',
+    description:
+      'Developed high-quality, robust production code for a wide variety of projects for clients, including the MITIC (Ministry of Information and Communication Technologies), MIC (Ministry of Industry and Commerce), and MEF (Ministry of Economy and Finance), among others. Also built e-commerce applications for companies like Plub. Developed an ETL for the management of public contracts for the government of Panama, and more. Through my collaboration, many projects were successfully completed on time, allowing me to gain knowledge and experience.',
+    technologies: [
+      'React',
+      'React Native',
+      'Angular',
+      'SpringBoot',
+      'Django',
+      'FastAPI',
+      'PostgreSQL',
+    ],
+  },
+];
