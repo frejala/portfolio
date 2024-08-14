@@ -71,6 +71,7 @@ export const EXPERIENCES = [
       'Django',
       'FastAPI',
       'PostgreSQL',
+      'Elasitcsearch',
     ],
   },
 ];
