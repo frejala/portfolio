@@ -1,4 +1,5 @@
 import { PROJECTS } from '@/constants';
+import TechnologiesBubble from '@/components/ui/TechnologiesBubble';
 
 const Projects = () => {
   return (
@@ -27,16 +28,9 @@ const Projects = () => {
             <p className="mb-4 text-neutral-400">
               {project.description}
             </p>
-            <div className="flex flex-wrap items-center justify-start">
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <TechnologiesBubble
+              technologies={project.technologies}
+            />
           </div>
         </div>
       ))}
