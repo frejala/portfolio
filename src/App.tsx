@@ -1,6 +1,7 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
+import Navbar from '@/components/sections/Navbar';
+import Hero from '@/components/sections/Hero';
+import About from '@/components/sections/About';
+import Technologies from '@/components/sections/Technologies';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <About />
+        <Technologies />
       </div>
     </div>
   );
