@@ -123,3 +123,9 @@ export const PROJECTS = [
     ],
   },
 ];
+
+export const CONTACT = {
+  address: 'Areguá, Paraguay',
+  phoneNo: '+595 972 184 556',
+  email: 'fa.rejala03@gmail.com',
+};
