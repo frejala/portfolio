@@ -1,10 +1,5 @@
 import logo from '@/assets/logo.png';
-import {
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-} from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
+import { SOCIAL_MEDIA } from '@/constants';
 
 const Navbar = () => {
   return (
@@ -13,10 +8,11 @@ const Navbar = () => {
         <img className="mx-2 w-20" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaInstagram />
-        <FaSquareXTwitter />
+        {SOCIAL_MEDIA.map((social, index) => (
+          <a href={social.url} target="_blank" key={index}>
+            <social.Icon />
+          </a>
+        ))}
       </div>
     </nav>
   );
