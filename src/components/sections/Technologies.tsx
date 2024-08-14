@@ -1,5 +1,6 @@
 import TechnologyBox from '@/components/ui/TechnologyBox';
 import { TECHNOLOGIES } from '@/constants';
+import { cn } from '@/lib/utils';
 
 const Technologies = () => {
   return (
@@ -7,11 +8,11 @@ const Technologies = () => {
       <h1 className="my-20 text-center text-4xl">
         Technologies
       </h1>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="flex flex-wrap items-center justify-center gap-4">
         {TECHNOLOGIES.map((tech) => (
           <TechnologyBox key={tech.name}>
             <tech.Icon
-              className={`text-7xl ${tech.color}`}
+              className={cn(`text-7xl`, tech.color)}
             />
           </TechnologyBox>
         ))}
