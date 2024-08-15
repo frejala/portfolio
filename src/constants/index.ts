@@ -6,12 +6,8 @@ import { SiFastapi } from 'react-icons/si';
 import { TbBrandDjango } from 'react-icons/tb';
 import { SiSpringboot } from 'react-icons/si';
 import { BiLogoPostgresql } from 'react-icons/bi';
-import {
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-} from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 import project1 from '@/assets/projects/project-1.jpg';
 import project2 from '@/assets/projects/project-2.jpg';
@@ -33,14 +29,9 @@ export const SOCIAL_MEDIA = [
     Icon: FaGithub,
   },
   {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/frejala._/',
-    Icon: FaInstagram,
-  },
-  {
-    name: 'Twitter',
-    url: '',
-    Icon: FaSquareXTwitter,
+    name: 'Email',
+    url: 'mailto:fa.rejala03@gmail.com',
+    Icon: MdEmail,
   },
 ];
 
