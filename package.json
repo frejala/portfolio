@@ -2,12 +2,15 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://frejala.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -29,6 +32,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "eslint-plugin-readable-tailwind": "^1.6.0",
+    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
     "prettier": "^3.3.3",
