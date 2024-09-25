@@ -144,6 +144,29 @@ export const PROJECTS = [
   },
 ];
 
+export const NAV_ITEMS = [
+  {
+    name: 'Home',
+    url: '/',
+  },
+  {
+    name: 'About',
+    url: '/about',
+  },
+  {
+    name: 'Experience',
+    url: '/experience',
+  },
+  {
+    name: 'Projects',
+    url: '/projects',
+  },
+  {
+    name: 'Contact',
+    url: '/contact',
+  },
+];
+
 export const CONTACT = {
   address: 'Areguá, Paraguay',
   phoneNo: '+595 972 184 556',
