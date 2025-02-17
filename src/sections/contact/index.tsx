@@ -40,11 +40,6 @@ function Contact() {
         email: formData.email,
       };
 
-      toast.success("Thanks for reaching out!", {
-        description: "I'll get back to you soon.",
-        position: "top-center",
-      });
-
       emailjs.send(serviceID, templateID, templateParams, publicKey).then(
         () => {
           toast.success("Thanks for reaching out!", {
@@ -102,6 +97,7 @@ function Contact() {
                 id="name"
                 label="Name"
                 className={cn("w-full", errors.name && "animate-shake")}
+                value={formData.name}
                 onChange={handleChange}
               />
               {errors.name && (
@@ -115,6 +111,7 @@ function Contact() {
                 id="lastName"
                 label="Last Name"
                 className={cn("w-full", errors.lastName && "animate-shake")}
+                value={formData.lastName}
                 onChange={handleChange}
               />
               {errors.lastName && (
@@ -128,6 +125,7 @@ function Contact() {
                 id="email"
                 label="Email"
                 className={cn("w-full", errors.email && "animate-shake")}
+                value={formData.email}
                 onChange={handleChange}
               />
               {errors.email && (
