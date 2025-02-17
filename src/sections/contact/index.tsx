@@ -1,8 +1,13 @@
+import { useState } from "react";
+
 import { Button } from "@/components/ui/button";
 import { FloatingLabelInput } from "@/components/ui/floating-label-input";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+
 import { toast } from "sonner";
+
+import { serviceID, publicKey, templateID } from "@/env";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -30,8 +35,30 @@ function Contact() {
     setErrors(newErrors);
 
     if (Object.values(newErrors).every((error) => error === "")) {
-      toast.success("Message sent successfully!");
-      setFormData({ name: "", lastName: "", email: "" });
+      const templateParams = {
+        name: formData.name + " " + formData.lastName,
+        email: formData.email,
+      };
+
+      toast.success("Thanks for reaching out!", {
+        description: "I'll get back to you soon.",
+        position: "top-center",
+      });
+
+      emailjs.send(serviceID, templateID, templateParams, publicKey).then(
+        () => {
+          toast.success("Thanks for reaching out!", {
+            description: "I'll get back to you soon.",
+            position: "top-center",
+          });
+          setFormData({ name: "", lastName: "", email: "" });
+        },
+        () => {
+          toast.error("Failed to send message. Please try again later.", {
+            position: "top-center",
+          });
+        }
+      );
     }
   };
 
