@@ -10,6 +10,7 @@ import Autoplay, { AutoplayType } from "embla-carousel-autoplay";
 
 import { PROJECTS } from "@/constants";
 import { ProjectItem } from "./project-item";
+import { cn } from "@/lib/utils";
 
 function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -42,7 +43,7 @@ function Projects() {
         </CarouselContent>
       </Carousel>
       <Carousel opts={{ loop: true }} className="w-full">
-        <CarouselContent className="mt-8 flex jusfiy-center">
+        <CarouselContent className="mt-8 flex justify-center">
           {PROJECTS.map((project, index) => (
             <CarouselItem key={index} className="basis-1/3 md:basis-auto">
               <button
@@ -50,14 +51,15 @@ function Projects() {
                   emblaApi?.scrollTo(index);
                   autoplay.current.stop();
                 }}
-                className={`max-w-50 max-h-28 rounded-none transition-opacity ${
-                  activeIndex === index
-                    ? "border-2 border-[#49DEFF] opacity-100"
-                    : "opacity-50 hover:opacity-80"
-                }`}
+                className="max-w-50 max-h-28 rounded-none transition-opacity cursor-pointer"
               >
                 <img
-                  className="w-full h-full lg:h-full object-cover rounded-none"
+                  className={cn(
+                    "w-full h-full object-cover rounded-none",
+                    activeIndex === index
+                      ? "border-2 border-[#49DEFF] opacity-100"
+                      : "opacity-50 hover:opacity-80"
+                  )}
                   src={project.image}
                   alt={project.title}
                 />
