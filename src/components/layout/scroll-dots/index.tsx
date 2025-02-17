@@ -55,16 +55,24 @@ export default function ScrollDots() {
   return (
     <div className="hidden fixed right-8 top-1/2 -translate-y-1/2 lg:flex flex-col gap-10 z-50 mr-5">
       {sections.map((section) => (
-        <button
-          key={section}
-          onClick={() => handleClick(section)}
-          className={cn(
-            "w-2 h-2 rounded-none transition-all bg-white hover:scale-125",
-            activeSection === section ? "scale-125 opacity-100" : "opacity-40",
-            isScrolling ? "pointer-events-none" : ""
-          )}
-          aria-label={`Scroll to ${section} section`}
-        />
+        <div key={section} className="relative w-2 h-2">
+          <button
+            onClick={() => handleClick(section)}
+            className={cn(
+              "absolute inset-0 w-full h-full rounded-none transition-all duration-300 ease-in-out bg-white hover:scale-125",
+              activeSection === section
+                ? "scale-125 opacity-100"
+                : "opacity-40",
+              isScrolling ? "pointer-events-none" : ""
+            )}
+            style={{
+              // Use inline styles for dynamic opacity
+              opacity: activeSection === section ? 1 : 0.4,
+              transform: activeSection === section ? "scale(1.25)" : "scale(1)",
+            }}
+            aria-label={`Scroll to ${section} section`}
+          />
+        </div>
       ))}
     </div>
   );
