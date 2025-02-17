@@ -66,7 +66,6 @@ export default function ScrollDots() {
               isScrolling ? "pointer-events-none" : ""
             )}
             style={{
-              // Use inline styles for dynamic opacity
               opacity: activeSection === section ? 1 : 0.4,
               transform: activeSection === section ? "scale(1.25)" : "scale(1)",
             }}
