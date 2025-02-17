@@ -1,3 +1,6 @@
+import ProfilePic from "@/assets/profile.png";
+import StartIcon from "@/assets/star.svg";
+
 import { HERO_CONTENT } from "@/constants";
 import { motion } from "framer-motion";
 
@@ -59,7 +62,7 @@ function Hero() {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1.2 }}
-                src="/profile.png"
+                src={ProfilePic}
                 alt="Fabrizio Rejala"
                 className="rounded-3xl z-10"
               />
@@ -67,7 +70,7 @@ function Hero() {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1.6 }}
-                src="/star.svg"
+                src={StartIcon}
                 alt="Star Decoration"
                 className="absolute -top-6 -right-5 w-16 sm:w-20 z-50"
               />

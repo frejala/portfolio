@@ -1,3 +1,5 @@
+import ProjectRectangle from "@/assets/project-rectangle.png";
+
 export const NAV_ITEMS = [
   {
     name: "About Me",
@@ -50,7 +52,7 @@ export const PROJECTS = [
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React", "Express", "MongoDB"],
-    image: "/project-rectangle.png",
+    image: ProjectRectangle,
     href: "#",
   },
   {
@@ -59,7 +61,7 @@ export const PROJECTS = [
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React", "Tailwindcss", "Fakestore API"],
-    image: "/project-rectangle.png",
+    image: ProjectRectangle,
     href: "#",
   },
   {
@@ -68,7 +70,7 @@ export const PROJECTS = [
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React", "Django", "PostgreSQL"],
-    image: "/project-rectangle.png",
+    image: ProjectRectangle,
     href: "#",
   },
   {
@@ -77,7 +79,7 @@ export const PROJECTS = [
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React", "Node.js", "MongoDB"],
-    image: "/project-rectangle.png",
+    image: ProjectRectangle,
     href: "#",
   },
   {
@@ -86,7 +88,7 @@ export const PROJECTS = [
     description:
       "Developed a real-time chat application with user authentication and message encryption.",
     technologies: ["React", "Socket.io", "Node.js"],
-    image: "/project-rectangle.png",
+    image: ProjectRectangle,
     href: "#",
   },
   {
@@ -95,7 +97,7 @@ export const PROJECTS = [
     description:
       "Created a task management tool with drag-and-drop functionality and real-time updates.",
     technologies: ["React", "Redux", "Firebase"],
-    image: "/project-rectangle.png",
+    image: ProjectRectangle,
     href: "#",
   },
 ];

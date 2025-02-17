@@ -1,3 +1,5 @@
+import ArrowDiagonal from "@/assets/arrow-diagonal.svg";
+
 interface Project {
   title: string;
   company: string;
@@ -43,7 +45,7 @@ export function ProjectItem({ project }: { project: Project }) {
           className="font-mono text-[#49DEFF] inline-flex items-center mt-2 text-sm ml-2"
         >
           View Project
-          <img src="/arrow-diagonal.svg" alt="Arrow" className="w-2 h-2 ml-2" />
+          <img src={ArrowDiagonal} alt="Arrow" className="w-2 h-2 ml-2" />
         </a>
       </div>
     </div>
