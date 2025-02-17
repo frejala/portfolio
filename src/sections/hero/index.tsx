@@ -18,7 +18,7 @@ const container = (delay: number) => ({
 
 function Hero() {
   return (
-    <div className="lg:mb-35 pb-4">
+    <section className="lg:mb-35 pb-4" id="hero">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -78,7 +78,7 @@ function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

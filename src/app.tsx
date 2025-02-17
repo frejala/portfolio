@@ -8,6 +8,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
 import { Toaster } from "@/components/ui/sonner";
+import ScrollDots from "./components/layout/scroll-dots";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         </div>
       </div>
       <Toaster />
+      <ScrollDots />
     </>
   );
 }
