@@ -28,7 +28,7 @@ export function Hero() {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-[56px] font-extrabold tracking-tight lg:mt-16 lg:text-8xl text-transparent text-stroke-white font-poppins text-center md:text-left"
+              className="pb-16 text-[55px] font-extrabold tracking-tight lg:mt-16 lg:text-8xl text-transparent text-stroke-white font-poppins text-center md:text-left"
             >
               Fabrizio Rejala
               <span className="text-cblue">.</span>
@@ -66,7 +66,7 @@ export function Hero() {
                 transition={{ duration: 1, delay: 1.2 }}
                 src={ProfilePic.src}
                 alt="Fabrizio Rejala"
-                className="rounded-3xl z-10 size-105"
+                className="rounded-3xl z-10"
               />
               <motion.img
                 initial={{ x: 100, opacity: 0 }}

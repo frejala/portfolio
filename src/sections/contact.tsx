@@ -88,7 +88,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-4 my-20">
-      <h1 className="mb-20 text-center text-[56px] lg:text-8xl text-transparent text-stroke-white font-extrabold font-poppins">
+      <h1 className="mb-20 text-center text-[55px] lg:text-8xl text-transparent text-stroke-white font-extrabold font-poppins">
         Let&apos;s get in <span className="text-white">touch</span>
         <span className="text-cblue">.</span>
       </h1>
