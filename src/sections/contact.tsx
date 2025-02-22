@@ -48,6 +48,7 @@ export function Contact() {
       });
 
       if (!response.ok) {
+        console.log(response);
         toast.error("Something went wrong!", {
           description: "Please try again later.",
         });
