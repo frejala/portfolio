@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Hi there, I'm Fabri! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 
-## Getting Started
+I’m a **Frontend Developer** and **Computer Science Engineering** student who’s
+passionate about building robust applications, experimenting with new
+technologies, and learning how things work under the hood.
 
-First, run the development server:
+## 💻 About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📍 Based in **Asunción, Paraguay**
+- 🎓 Studying **Computer Science Engineering**
+- 💬 Ask me about web development, JavaScript frameworks, or anything related to
+  **software engineering**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tech Stack & Skills
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Frontend:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- React (Hooks, Context API)
+- React Native & Expo
+- Angular
+- Tailwind CSS
 
-## Learn More
+**Backend:**
 
-To learn more about Next.js, take a look at the following resources:
+- Spring Boot (Java)
+- FastAPI (Python)
+- Django (Python)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Databases:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- PostgreSQL
+- MySQL
 
-## Deploy on Vercel
+## 🔧 Tools & Environments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Git & GitHub (version control)
+- Visual Studio Code, IntelliJ, PyCharm
+- Familiar with CI/CD and Docker
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<!-- ## 📈 GitHub Stats
+
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=frejala&show_icons=true&theme=radical) -->
+
+## 🤝 Let’s Connect
+
+- **LinkedIn:** [frejala](https://www.linkedin.com/in/frejala/)
+- **Email:** fa.rejala03@gmail.com

@@ -1,42 +1,73 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tailwindcss";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@custom-variant dark (&:is(.dark *));
+
+@plugin "tailwindcss-animate";
+
+@layer utilities {
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .animate-draw {
+    fill: none;
+    stroke: white;
+    stroke-width: 1;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: draw 4s linear forwards;
+  }
+
+  .text-stroke-white {
+    -webkit-text-stroke: 1px white;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@theme inline {
+  --color-background: #1f1f23;
+  --color-cblue: #49deff;
+  --color-cyellow: #ffc100;
+  --color-cred: #d1201c;
+  --background-image-noise: url("/background.jpg");
+  --font-mono: var(--font-space-mono);
+  --font-poppins: var(--font-poppins);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@layer base {
+  body {
+    @apply bg-background;
+  }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: transform;
+    backface-visibility: hidden;
+    opacity: 0.2;
+    z-index: -1;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  html::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Webkit */
+  }
+
+  .text-stroke-white {
+    -webkit-text-stroke: 1px white;
   }
 }
