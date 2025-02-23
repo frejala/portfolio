@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import Link from "next/link";
+
 import {
   Popover,
   PopoverTrigger,
@@ -44,7 +46,7 @@ export function Nav() {
       >
         <nav className="flex flex-col divide-y divide-white w-full font-mono font-bold text-sm leading-11 tracking-normal text-white text-center">
           {NAV_ITEMS.map((item, index) => (
-            <a
+            <Link
               key={index}
               href={item.href}
               className="group block text-center py-4 transition duration-300"
@@ -65,7 +67,7 @@ export function Nav() {
                 {item.name}
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white" />
               </span>
-            </a>
+            </Link>
           ))}
         </nav>
       </PopoverContent>

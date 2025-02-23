@@ -1,6 +1,7 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import Rocket from "@/assets/icons/rocket.svg";
@@ -51,7 +52,7 @@ export function ProjectItem({ project }: { project: Project }) {
           </div>
         )}
         <div className="flex flex-row md:flex-col">
-          <a
+          <Link
             href={project.demo}
             target="_blank"
             className="font-mono text-cblue inline-flex items-center mt-2 text-sm ml-2 w-fit hover:underline"
@@ -64,8 +65,8 @@ export function ProjectItem({ project }: { project: Project }) {
               height={16}
               className="ml-2"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href={project.sourceCode}
             target="_blank"
             className="font-mono text-cblue inline-flex items-center mt-2 text-sm ml-2 w-fit hover:underline"
@@ -78,7 +79,7 @@ export function ProjectItem({ project }: { project: Project }) {
               height={16}
               className="ml-2"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

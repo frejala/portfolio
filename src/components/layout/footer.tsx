@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import GithubIcon from "@/assets/icons/github.svg";
 import MailIcon from "@/assets/icons/mail.svg";
@@ -13,30 +14,30 @@ export function Footer() {
     <footer className="text-white py-10">
       <div className="container mx-auto flex flex-col gap-10 sm:flex-row sm:gap-0 justify-between items-center px-4">
         <div className="flex space-x-4 items-end">
-          <a
+          <Link
             href="https://github.com/frejala"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-opacity duration-200 hover:opacity-80"
           >
             <Image src={GithubIcon} alt="GitHub" width={24} height={24} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="mailto:fa.rejala03@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-opacity duration-200 hover:opacity-80"
           >
             <Image src={MailIcon} alt="Mail" width={24} height={24} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.linkedin.com/in/frejala/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-opacity duration-200 hover:opacity-80"
           >
             <Image src={LinkedinIcon} alt="LinkedIn" width={24} height={24} />
-          </a>
+          </Link>
         </div>
         <div className="flex justify-center items-center">
           <p className="text-md font-mono text-white flex items-center">
