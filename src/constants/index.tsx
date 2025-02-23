@@ -1,5 +1,6 @@
 import ProjectRectangle from "@/assets/projects/project-rectangle.png";
 import EcommerceProject from "@/assets/projects/ecommerce-project.png";
+import VoidTattoo from "@/assets/projects/void-tattoo.png";
 import PortfolioProject from "@/assets/projects/portfolio-project.png";
 
 export const NAV_ITEMS = [
@@ -52,7 +53,7 @@ export const PROJECTS = [
     title: "Portfolio Website",
     description:
       "This is my personal portfolio website, designed to showcase my skills, projects, and experiences. The platform features a clean, modern design with smooth animations and transitions, ensuring a seamless user experience. The website is fully responsive and optimized for all devices.",
-    technologies: ["React + Vite", "Tailwindcss", "Framer Motion"],
+    technologies: ["Next.js", "Tailwindcss", "Framer Motion"],
     image: PortfolioProject,
     demo: "https://frejala.com/",
     sourceCode: "https://github.com/frejala/portfolio",
@@ -67,14 +68,13 @@ export const PROJECTS = [
     sourceCode: "https://github.com/frejala/ecommerce-shop",
   },
   {
-    title: "Project 3",
-    company: "Personal Project",
+    title: "Void Tattoo",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    technologies: ["React", "Django", "PostgreSQL"],
-    image: ProjectRectangle,
-    demo: "#",
-    sourceCode: "#",
+      "Developed a website for a tattoo studio, featuring a modern design with a dark color scheme to match the brand's aesthetic. The platform includes a gallery of tattoo designs, artist profiles, and a contact form for booking appointments. The website is fully responsive and optimized for all devices.",
+    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    image: VoidTattoo,
+    demo: "https://void-tattoo-opal.vercel.app/",
+    sourceCode: "https://github.com/frejala/void-tattoo",
   },
   {
     title: "Project 4",

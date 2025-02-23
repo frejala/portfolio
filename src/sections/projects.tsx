@@ -45,8 +45,8 @@ export function Projects() {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="mt-8 w-full overflow-x-auto px-4">
-        <div className="flex flex-nowrap gap-4 justify-center">
+      <div className="mt-8 overflow-x-auto w-fit mx-auto">
+        <div className="inline-flex flex-nowrap gap-4">
           {PROJECTS.map((project, index) => (
             <div key={index} className="flex-shrink-0">
               <button
