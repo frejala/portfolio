@@ -22,7 +22,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="py-4 my-20">
-      <h1 className="mb-20 text-center text-[55px] lg:text-8xl text-transparent text-stroke-white font-extrabold font-poppins">
+      <h1 className="mb-20 text-center text-[53px] lg:text-8xl text-transparent text-stroke-white font-extrabold font-poppins">
         Projects<span className="text-cblue">.</span>
       </h1>
       <Carousel

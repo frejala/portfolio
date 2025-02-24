@@ -28,7 +28,7 @@ export function Hero() {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 font-extrabold tracking-tight lg:mt-16 text-8xl text-transparent text-stroke-white font-poppins text-center md:text-left"
+              className="pb-16 text-7xl font-extrabold tracking-tight lg:mt-16 lg:text-8xl text-transparent text-stroke-white font-poppins text-center md:text-left"
             >
               Fabrizio Rejala
               <span className="text-cblue">.</span>
@@ -45,7 +45,7 @@ export function Hero() {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-mono tracking-normal leading-10 text-white"
+              className="my-2 max-w-xl py-6 font-mono tracking-normal leading-10 text-white text-center"
             >
               {HERO_CONTENT}
             </motion.p>

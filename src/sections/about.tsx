@@ -14,7 +14,7 @@ export function About() {
           whileInView={"show"}
           className="w-full lg:w-1/2 lg:p-8 lg:pt-0"
         >
-          <h1 className="pb-16 text-[55px] font-extrabold tracking-tight lg:text-8xl text-transparent text-stroke-white mt-16 lg:mt-0 text-center lg:text-start font-poppins">
+          <h1 className="pb-16 text-[53px] font-extrabold tracking-tight lg:text-8xl text-transparent text-stroke-white mt-16 lg:mt-0 text-center lg:text-start font-poppins">
             About Me
             <span className="text-cblue">.</span>
           </h1>

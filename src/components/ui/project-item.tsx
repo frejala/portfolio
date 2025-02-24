@@ -28,7 +28,7 @@ export function ProjectItem({ project }: { project: Project }) {
         />
       </div>
       <div className="w-full lg:w-1/2 mt-4 lg:mt-0">
-        <h6 className="mb-2 font-semibold font-poppins text-xl text-white">
+        <h6 className="mb-2 font-semibold font-poppins text-xl text-white text-center lg:text-left">
           {project.title}{" "}
           {project.company && (
             <>
@@ -36,11 +36,11 @@ export function ProjectItem({ project }: { project: Project }) {
             </>
           )}
         </h6>
-        <p className="mb-4 font-mono text-sm leading-10 text-white">
+        <p className="mb-4 font-mono text-sm leading-10 text-white text-center lg:text-left">
           {project.description}
         </p>
         {project.technologies && (
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center lg:justify-start">
             {project.technologies.map((technology, index) => (
               <span
                 key={index}
@@ -51,7 +51,7 @@ export function ProjectItem({ project }: { project: Project }) {
             ))}
           </div>
         )}
-        <div className="flex flex-row md:flex-col">
+        <div className="flex flex-row justify-center md:flex-col">
           <Link
             href={project.demo}
             target="_blank"

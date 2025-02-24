@@ -14,7 +14,7 @@ export function RoadPath() {
           whileInView={"show"}
           className="w-full lg:w-1/2 lg:p-8 lg:pt-0"
         >
-          <h1 className="pb-16 text-[55px] font-extrabold tracking-tight lg:text-8xl text-transparent text-stroke-white mt-16 lg:mt-0 text-center lg:text-start font-poppins">
+          <h1 className="pb-16 text-[53px] font-extrabold tracking-tight lg:text-8xl text-transparent text-stroke-white mt-16 lg:mt-0 text-center lg:text-start font-poppins">
             Road-Path
             <span className="text-cblue">.</span>
           </h1>
@@ -32,12 +32,12 @@ export function RoadPath() {
                   key={index}
                   className="mb-8 flex flex-wrap lg:justify-center"
                 >
-                  <div className="w-full lg:w-1/4">
+                  <div className="w-full lg:w-1/4 text-center lg:text-start">
                     <p className="mb-2 text-sm text-cblue font-mono">
                       {experience.year}
                     </p>
                   </div>
-                  <div className="w-full max-w-2xl lg:w-3/4">
+                  <div className="w-full max-w-2xl lg:w-3/4 text-center lg:text-start">
                     <h6 className="mb-2 font-semibold font-poppins text-sm text-white">
                       {experience.role} • <span>{experience.company}</span>
                     </h6>
@@ -45,7 +45,7 @@ export function RoadPath() {
                       {experience.description}
                     </p>
                     {experience.technologies && (
-                      <div className="flex flex-wrap">
+                      <div className="flex flex-wrap justify-center lg:justify-start">
                         {experience.technologies.map((technology, index) => (
                           <span
                             key={index}
