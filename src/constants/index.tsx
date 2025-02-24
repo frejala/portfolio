@@ -1,4 +1,4 @@
-import ProjectRectangle from "@/assets/projects/project-rectangle.png";
+// import ProjectRectangle from "@/assets/projects/project-rectangle.png";
 import EcommerceProject from "@/assets/projects/ecommerce-project.png";
 import VoidTattoo from "@/assets/projects/void-tattoo.png";
 import PortfolioProject from "@/assets/projects/portfolio-project.png";
@@ -75,35 +75,5 @@ export const PROJECTS = [
     image: VoidTattoo,
     demo: "https://void-tattoo-opal.vercel.app/",
     sourceCode: "https://github.com/frejala/void-tattoo",
-  },
-  {
-    title: "Project 4",
-    company: "Personal Project",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    technologies: ["React", "Node.js", "MongoDB"],
-    image: ProjectRectangle,
-    demo: "#",
-    sourceCode: "#",
-  },
-  {
-    title: "Project 5",
-    company: "Personal Project",
-    description:
-      "Developed a real-time chat application with user authentication and message encryption.",
-    technologies: ["React", "Socket.io", "Node.js"],
-    image: ProjectRectangle,
-    demo: "#",
-    sourceCode: "#",
-  },
-  {
-    title: "Project 6",
-    company: "Personal Project",
-    description:
-      "Created a task management tool with drag-and-drop functionality and real-time updates.",
-    technologies: ["React", "Redux", "Firebase"],
-    image: ProjectRectangle,
-    demo: "#",
-    sourceCode: "#",
   },
 ];
