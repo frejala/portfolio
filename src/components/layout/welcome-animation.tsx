@@ -7,7 +7,7 @@ type WelcomeAnimationProps = {
 export function WelcomeAnimation({ setAnimDone }: WelcomeAnimationProps) {
   return (
     <div className="h-screen w-screen">
-      <div className="container mx-auto flex justify-center items-center w-full h-full">
+      <div className="container mx-auto flex justify-center items-center w-full h-full selection:bg-cyan-300">
         <svg width="100%" height="100%">
           <text
             className="animate-draw text-6xl md:text-8xl font-bold font-poppins"
