@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section className="py-4 my-20" id="about">
+    <section className="pb-4 mb-20" id="about">
       <div className="flex flex-wrap">
         <motion.div
           variants={fadeIn("right")}
@@ -26,7 +26,9 @@ export function About() {
           className="w-full lg:w-1/2 mt-2.5"
         >
           <div className="flex justify-center lg:justify-end">
-            <p className="max-w-xl font-mono text-white">{ABOUT_TEXT}</p>
+            <p className="max-w-xl font-mono text-white text-center lg:text-start">
+              {ABOUT_TEXT}
+            </p>
           </div>
         </motion.div>
       </div>

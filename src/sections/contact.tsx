@@ -29,7 +29,6 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
     const newErrors = validateForm(formData);
     setErrors(newErrors);
 
@@ -39,6 +38,7 @@ export function Contact() {
         email: formData.email,
       };
 
+      setLoading(true);
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {

@@ -22,7 +22,7 @@ export default function PortfolioLayout({ children }: Props) {
   return (
     <div className="mx-auto overflow-hidden px-10 lg:px-25 xl:px-45 selection:bg-cyan-300">
       <Header />
-      <main className="mt-20">{children}</main>
+      <main>{children}</main>
       <Footer />
       <Toaster />
       <ScrollDots />

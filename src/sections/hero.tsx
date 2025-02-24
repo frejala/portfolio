@@ -1,7 +1,7 @@
 "use client";
 
-import ProfilePic from "@/assets/img/profile.png";
-import StartIcon from "@/assets/icons/star.svg";
+// import ProfilePic from "@/assets/img/profile.png";
+// import StartIcon from "@/assets/icons/star.svg";
 
 import { HERO_CONTENT } from "@/constants";
 import { motion } from "framer-motion";
@@ -20,15 +20,15 @@ const container = (delay: number) => ({
 
 export function Hero() {
   return (
-    <section className="lg:mb-35 pb-4" id="hero">
+    <section className="h-screen flex justify-center pt-40" id="hero">
       <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center justify-center lg:justify-start lg:items-start">
+        <div className="w-full">
+          <div className="flex flex-col items-center justify-center">
             <motion.h1
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-[55px] font-extrabold tracking-tight lg:mt-16 lg:text-8xl text-transparent text-stroke-white font-poppins text-center md:text-left"
+              className="pb-16 font-extrabold tracking-tight lg:mt-16 text-8xl text-transparent text-stroke-white font-poppins text-center md:text-left"
             >
               Fabrizio Rejala
               <span className="text-cblue">.</span>
@@ -51,8 +51,8 @@ export function Hero() {
             </motion.p>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center lg:justify-end">
+        {/* <div className="w-full lg:w-1/2 lg:p-8">
+          <div className="flex justify-center lg:justify-end lg:mr-10">
             <div className="relative w-fit">
               <motion.div
                 initial={{ x: 100, opacity: 0 }}
@@ -78,7 +78,7 @@ export function Hero() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
