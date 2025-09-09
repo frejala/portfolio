@@ -1,4 +1,3 @@
-// import ProjectRectangle from "@/assets/projects/project-rectangle.png";
 import EcommerceProject from "@/assets/projects/ecommerce-project.png";
 import VoidTattoo from "@/assets/projects/void-tattoo.png";
 import PortfolioProject from "@/assets/projects/portfolio-project.png";

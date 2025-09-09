@@ -52,15 +52,18 @@ export function Nav() {
               className="group block text-center py-4 transition duration-300"
               onClick={(e) => {
                 e.preventDefault();
-                const target = document.querySelector(item.href);
+                setOpen(false);
 
-                if (target) {
-                  target.scrollIntoView({ behavior: "smooth" });
+                setTimeout(() => {
+                  const target = document.querySelector(item.href);
 
-                  setOpen(false);
-
-                  (e.currentTarget as HTMLElement).blur();
-                }
+                  if (target) {
+                    target.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }
+                }, 100);
               }}
             >
               <span className="inline-block relative">
